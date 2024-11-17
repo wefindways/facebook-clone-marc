@@ -1,0 +1,93 @@
+.border{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 290px;
+    padding: 18px 18px 25px 18px;
+    margin-top: 110px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.28);
+    background-color: white;
+}
+.login-form{
+    display: flex;
+    height: 270px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gainsboro;
+}
+.email-placeholder,
+.password-placeholder{
+    width: 305px;
+    border: none; 
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.31);
+    font-size: 16px;
+}
+.email-placeholder::placeholder,
+.password-placeholder::placeholder{
+    font-size: 16px;
+}
+.login-button{  
+    width: inherit;
+    padding: 14px 0 14px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(1, 101, 225);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.login-button:hover{
+    background-color: rgb(5, 89, 192);
+}
+.login-button:active{
+    background-color: rgb(4, 72, 155);
+}
+.forgot-password{
+    font-size: 14px;
+    color: blue;
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.forgot-password:hover{
+    text-decoration: underline;
+}
+.create-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.create-button{
+   background-color: rgb(8, 169, 5);
+   border: none;
+   color: white;
+   padding: 15px;
+   font-size: 18px;
+   border-radius: 6px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: 0.15s;
+}
+.create-button:hover{
+    background-color: rgb(9, 144, 7);
+}
+.create-button:active{
+    background-color: rgb(7, 126, 5);
+}
+.span-create{
+    font-weight: bold;
+}
+.span-create:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

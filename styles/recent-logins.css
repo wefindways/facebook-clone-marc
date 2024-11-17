@@ -1,0 +1,158 @@
+  .facebook {
+    height: 65px;
+    color: rgb(1, 101, 225);
+    margin-left: -18px;
+  }
+  .recent-users {
+    font-size: 32px;
+    color: rgba(36, 35, 35, 0.927);
+    margin-bottom: 6px;
+    margin-top: 0;
+    font-weight: 100;
+  }
+  .login {
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-bottom: 5px;
+  }
+  .recent-logins {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .borders {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.31);
+    border-radius: 8px;
+    background-color: white;
+    transition: 0.15s;
+    position: relative;
+  }
+  .tooltip-attribute{
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: 1;
+  }
+  .tooltip-button{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    width: 28px;
+    border-radius: 14px;
+    opacity: 0;
+    transition: 0.15s;
+  }
+  .remove-account-tooltip-button{
+    visibility: hidden;
+    color: white;
+    font-size: 11px;
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+    white-space: nowrap;
+    padding: 8px;
+    transform: translateX(-5%) translateY(-215%);
+    transition: opacity 0.15s;
+  }
+  /*small arrow at the bottom*/
+  .remove-account-tooltip-button::after{
+    content: "";
+    position: absolute;
+    top: 100%; /* Position the arrow at the bottom of the tooltip */
+    left: 10%;
+    transform: translateX(-50%);
+    border-width: 4px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  .remove-acc-tooltip-relative{
+    position: relative;
+    display: inline-block;
+  }
+  .remove-acc-tooltip-attribute{
+    position: absolute;
+    pointer-events: none;
+  }
+  .remove-acc-tooltip-relative:hover 
+  .remove-account-tooltip-button{
+    visibility: visible;
+    opacity: 1;
+  }
+  .tooltip-icon{
+    color: gray;
+    font-size: 22px;
+  }
+  .borders:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.31);
+  }
+  .borders:hover .tooltip-button{
+    visibility: visible;
+    opacity: 1;
+  }
+  .previews-users {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-top: 20px;
+    cursor: pointer;
+  }
+  .users-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    background-color: rgba(229, 222, 222, 0.155);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+  .border-relative{
+    position: relative;
+  }
+  .button-attribute{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: 20px;
+    width: 20px;
+  }
+  .remove-button{
+    background-color: rgba(0, 0, 0, 0.388);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+  }
+  .icon{
+    color: rgba(222, 219, 219, 0.95);
+    font-size: 18px;
+  }
+  .add-button {
+    background-color: rgba(1, 101, 225);
+    border: none;
+    color: white;
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  .username,
+  .add-account {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    color: rgba(36, 35, 35, 0.927);
+  }
+  .add-account {
+    color: rgb(1, 101, 225);
+  }
+
